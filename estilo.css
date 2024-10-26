@@ -107,7 +107,7 @@ body {
     color: white; /* Cor do texto */
     border: none; /* Remove a borda */
     border-radius: 10px;
-    padding: 40px;
+    padding: 20px;
     margin-bottom: 20px; /* Espaçamento entre os cartões */
     display: flex;
     align-items: center; /* Centraliza os itens verticalmente */
@@ -157,7 +157,7 @@ body {
     line-height: 1.6;
 }
 /* Consultas de Mídia para Responsividade */
-@media (max-width: 768px) 
+@media (max-width: 768px) {
     body {
         flex-direction: column; /* Muda para coluna em telas pequenas */
     }
@@ -182,4 +182,4 @@ body {
     .card-status {
         width: 90%; /* Cartões ocupam 90% da largura */
         }    
-        
+}
