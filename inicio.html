@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Início</title>
+    <link rel="stylesheet" href="estilo.css"> <!-- Corrigido para 'style.css' -->
+</head>
+<body>
+    <div class="coluna coluna-esquerda">
+        <img src="img/logo_hidroponia.svg" alt="Logo do Sistema de Hidroponia" width="150px" />
+        
+        <ul>
+            <li>
+                <a href="#inicio">
+                    <iconify-icon icon="material-symbols:home-outline"></iconify-icon>
+                    Início                    
+                </a>
+            </li>
+            <li><a href="#sensores">
+                <iconify-icon icon="fa-solid:cogs"></iconify-icon>
+                Sensores
+            </a></li>
+            <li><a href="#informacoes">
+                <iconify-icon icon="ph:info-bold"></iconify-icon>
+                Informações
+            </a></li>
+            <li><a href="#sistemas">
+                <iconify-icon icon="tabler:plant"></iconify-icon>
+                Sistemas
+            </a></li>
+        </ul>
+    </div>
+
+    <div class="coluna coluna-direita">
+        <h1>Hidroponia</h1>
+
+        <section class="introducao">
+            <h2>Bem-vindo ao Sistema de Hidroponia do Ifes</h2>
+            <p>Esta é a sua central de controle para monitorar e gerenciar os sistemas hidropônicos. Aqui você pode acessar informações sobre sensores, dados em tempo real, e o status dos seus sistemas.</p>
+        </section>
+
+        <section class="status-sistemas">
+            <h3>Status dos Sistemas</h3>
+            <div class="card-status">
+                <iconify-icon icon="mdi:thermometer" aria-hidden="true"></iconify-icon>
+                <div>
+                    <h4>Temperatura</h4>
+                    <p>25°C</p> <!-- Exemplo de valor -->
+                </div>
+            </div>
+            <div class="card-status">
+                <iconify-icon icon="mdi:water-percent" aria-hidden="true"></iconify-icon>
+                <div>
+                    <h4>Umidade</h4>
+                    <p>60%</p> <!-- Exemplo de valor -->
+                </div>
+            </div>
+            <div class="card-status">
+                <iconify-icon icon="mdi:ph" aria-hidden="true"></iconify-icon>
+                <div>
+                    <h4>pH</h4>
+                    <p>6.5</p> <!-- Exemplo de valor -->
+                </div>
+            </div>
+            <div class="card-status">
+                <iconify-icon icon="mdi:lightning-bolt" aria-hidden="true"></iconify-icon>
+                <div>
+                    <h4>Condutividade</h4>
+                    <p>1.2 mS/cm</p> <!-- Exemplo de valor -->
+                </div>
+            </div>
+        </section>
+
+        <section class="resumo">
+            <h3>Resumo</h3>
+            <p>Todos os sistemas estão funcionando normalmente. Nenhuma anomalia detectada nos últimos 24 horas.</p>
+        </section>
+
+        <!-- Você pode adicionar gráficos ou outras visualizações aqui -->
+    </div>
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+</html>

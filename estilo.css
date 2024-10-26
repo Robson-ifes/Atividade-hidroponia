@@ -7,6 +7,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Adiciona um melhor controle de espaçamento */
 }
 
 body {
@@ -21,7 +22,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start; /* Alinha ao topo */
     align-items: center;
     color: rgb(56, 56, 56);
 }
@@ -33,25 +34,26 @@ body {
     padding-left: 20px;
     background-color: var(--cor-coluna-esquerda);
     border-right: 1px solid var(--cor-logo);
-}
-
-.coluna-direita h1 {
-    margin-bottom: 25px;
+    flex-shrink: 0; /* Impede que a coluna encolha */
 }
 
 .coluna-direita {
-    flex-grow: 4;
-
+    flex-grow: 1; /* Expande para preencher o espaço restante */
     background-color: var(--cor-coluna-direita);
+    padding: 20px; /* Padding ajustado */
+    overflow-y: auto; /* Permite rolagem se o conteúdo exceder a altura */
 }
 
+.coluna-direita h1 {
+    margin-bottom: 30px;
+    color: var(--cor-logo);
+}
 .coluna-esquerda ul {
     list-style: none;
     padding: 0;
 }
-
 .coluna-esquerda li {
-    margin-bottom: 10px;
+    margin-bottom: 15px; /* Aumenta a margem inferior dos itens do menu */
 }
 
 .coluna-esquerda a {
@@ -69,9 +71,115 @@ body {
 .coluna-esquerda a:hover {   
     background-color: var(--cor-coluna-esquerda);
     color:black;    
-    font-weight: 600;
+    
 }
 
 .coluna-esquerda a iconify-icon {
     margin-right: 10px;
 }
+/* Estilos para a página Início */
+
+/* Seção de Introdução */
+.introducao {
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--cor-texto-card);
+}
+
+.introducao h2 {
+    font-size: 22px;
+    color: var(--cor-logo);
+    margin-bottom: 30px;
+}
+
+/* Seção Status dos Sistemas */
+.status-sistemas {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 40px;
+
+}
+
+.card-status {
+    background-color: var(--cor-logo); /* Usar a mesma cor de fundo que os botões do menu */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda */
+    border-radius: 10px;
+    padding: 40px;
+    margin-bottom: 20px; /* Espaçamento entre os cartões */
+    display: flex;
+    align-items: center; /* Centraliza os itens verticalmente */
+    justify-content: flex-start; /* Alinha os itens à esquerda */
+    transition: background-color 0.3s; /* Transição suave para o hover */
+}
+.card-status:hover {
+    background-color: var(--cor-coluna-esquerda); /* Cor de fundo ao passar o mouse */}
+
+    /* Para o ícone ao lado do texto */
+.card-status iconify-icon {
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+    font-size: 24px; /* Tamanho do ícone */
+    flex-shrink: 0; /* Para evitar que o ícone mude de tamanho */
+}
+
+.card-status h4 {
+    font-size: 18px;
+    color: var(--cor-titulo-card);
+    margin-bottom: 10px;
+}
+
+.card-status p {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--cor-texto-card);
+}
+
+/* Seção Resumo */
+.resumo {
+    background-color: var(--cor-card);
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid var(--cor-logo);
+    margin-bottom: 30px; /* Aumenta o espaço inferior do resumo */
+}
+
+.resumo h3 {
+    font-size: 20px;
+    color: var(--cor-logo);
+    margin-bottom: 15px;
+}
+
+.resumo p {
+    font-size: 16px;
+    color: var(--cor-texto-card);
+    line-height: 1.6;
+}
+/* Consultas de Mídia para Responsividade */
+@media (max-width: 768px) 
+    body {
+        flex-direction: column; /* Muda para coluna em telas pequenas */
+    }
+
+    .coluna {
+        height: auto; /* Altura automática para permitir rolagem */
+    }
+
+    .coluna-esquerda {
+        max-width: 100%; /* Coluna esquerda ocupa toda a largura */
+        border-right: none; /* Remove a borda direita */
+        border-bottom: 1px solid var(--cor-logo); /* Borda inferior em vez de lateral */
+    }
+
+    .coluna-direita {
+        padding: 10px; /* Menos padding em telas pequenas */
+    }
+
+    .status-sistemas {
+        flex-direction: column; /* Muda a direção para coluna */
+        align-items: center; /* Centraliza os cartões */}
+    .card-status {
+        width: 90%; /* Cartões ocupam 90% da largura */
+        }    
+        
