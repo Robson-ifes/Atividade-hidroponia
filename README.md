@@ -11,7 +11,7 @@ Bem-vindo à atividade de hidroponia! Este projeto tem como objetivo desenvolver
 
 1. **Clone o repositório**
    ```bash
-   git clone https://github.com/Robson-ifes/Atividade-hidroponia.git
+   git clone https://github.com/miltoncps/hidroponia-ifes
 
 Este projeto simula um site com sistema básico para cultivo de plantas em hidroponia.
 
