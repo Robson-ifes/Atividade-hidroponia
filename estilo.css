@@ -35,6 +35,13 @@ body {
     padding-left: 20px;
     background-color: var(--cor-coluna-esquerda);
     border-right: 1px solid var(--cor-logo);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    height: 100vh; /* Garante que a coluna ocupe toda a altura da tela */
+    padding-top: 20px; /* Ajuste opcional para criar um espaçamento no topo */
+    padding-bottom: 20px; /* Ajuste opcional para criar um espaçamento no final */
     flex-shrink: 0; /* Impede que a coluna encolha */
 }
 
@@ -43,17 +50,29 @@ body {
     background-color: var(--cor-coluna-direita);
     padding: 20px; /* Padding ajustado */
     overflow-y: auto; /* Permite rolagem se o conteúdo exceder a altura */
-    background-image: url("getty-images-UA3oEsDiPWA-unsplash.jpg"); /* Caminho da imagem */
     background-size: cover; /* Ajusta a imagem para cobrir toda a área */
     background-repeat: no-repeat; /* Evita repetição da imagem */
     background-position: center; /* Centraliza a imagem */
+    position: relative; /* Para posicionar o pseudo-elemento corretamente */
 }
+
 
 .coluna-direita h1 {
     margin-bottom: 30px;
     color: #052506;
     font-size: 50px; /* Ajuste para o tamanho desejado */
 }
+.coluna-direita img {
+    transition: transform 0.3s ease, filter 0.3s ease; /* Transição suave para os efeitos */
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.coluna-direita img:hover {
+    transform: scale(1.2); /* Aumenta a imagem ao passar o mouse */
+    
+}
+
 .coluna-esquerda ul {
     list-style: none;
     padding: 0;
@@ -103,13 +122,14 @@ body {
 }
 .introducao h2 {
     font-size: 22px;
-    ccolor: #e5e5e5;
     margin-bottom: 30px;
 }
 
 /* Seção Status dos Sistemas */
 .status-sistemas h3 {
     font-size: 36px; /* Ajuste para o tamanho desejado */
+    margin-top: 25px; /* Ajuste a margem superior para posicionar o h3 */
+    text-align: center; /* Centraliza o texto */
     
 }
 .status-sistemas {
