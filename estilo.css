@@ -64,8 +64,8 @@ body {
 }
 .coluna-direita img {
     transition: transform 0.3s ease, filter 0.3s ease; /* Transição suave para os efeitos */
-    padding-top: 20px;
-    padding-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 60px;
 }
 
 .coluna-direita img:hover {
