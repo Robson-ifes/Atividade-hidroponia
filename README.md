@@ -7,6 +7,9 @@ Bem-vindo à atividade de hidroponia! Este projeto tem como objetivo desenvolver
 - `estilo.css`: Folha de estilos para a interface.
 - `inicio.html`: Página inicial do projeto.
 
+  ![Descrição da imagem](caminho/para/sua/imagem.jpg)
+
+
 ## 🚀 Como Começar
 
 1. **Clone o repositório**
