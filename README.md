@@ -7,7 +7,7 @@ Bem-vindo à atividade de hidroponia! Este projeto tem como objetivo desenvolver
 - `estilo.css`: Folha de estilos para a interface.
 - `inicio.html`: Página inicial do projeto.
 
-  ![Descrição da imagem](caminho/para/sua/imagem.jpg)
+  ![Exemplo do Layout](https://github.com/Robson-ifes/Atividade-hidroponia/blob/hidroponia_local/Hidroponia.png)
 
 
 ## 🚀 Como Começar
